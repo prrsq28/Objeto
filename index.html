@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Objeto Móvil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Práctica voluntaria: Crear Objeto JS</h1>
+    </header>
+    <div class="particion" id="objeto">
+        <h3>Objeto: movil</h3>
+        <video id="olas" src="media/ocean.mp4" poster="images/movil.jpg"></video>
+    </div>
+    <div class="particion" id="propiedades">
+        <h3>Propiedades:</h3><br><hr><br>
+        <ul>
+            <li id="dimensiones">Dimensiones: </li>
+                <ul>
+                    <li>Alto: <span id="alto"></span></li>
+                    <li>Ancho: <span id="ancho"></span></li>
+                    <li>Grosor: <span id="grosor"></span></li>
+                </ul>
+            <li>Pantalla: <span id="pantalla"></span></li>
+            <li>Memoria: <span id="memoria"></span></li>
+        </ul>
+        <button onclick="valorPropiedades()">Ver valor de Propiedades</button>
+    </div>
+    <div class="particion" id="metodos">
+        <h3>Métodos</h3><br><hr><br>
+        <ul>
+            <li>Audio
+                <button onclick="sonido()">Pobar método Audio</button>
+            </li><br>
+            <li>Video
+                <button onclick="video()">Pobar método Video</button>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <p>Os dejo, para los más "visuales" un ejemplo de como se crea un objeto en Javascript y como yo lo asocio a un objeto físico.</p>
+        <div class="pie">
+            <img src="images//objeto_movil_js.jpg" alt="Imagen de codigo JS">
+        </div>    
+            <div class="pie">
+                <label>He creado el Objeto movil, le he dado unas propiedades:</label><br>
+                <label>Dimensiones, (que a su vez es otro objeto con las proliedades alto, ancho y grosor)</label><br>
+                <label>pantalla y memoria.</label>
+                <label>Además le he asociado un par de métodos (funciones):</label>
+                <label>Audio y video</label>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="script.js"></script>
